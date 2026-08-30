@@ -116,7 +116,7 @@
 
 	nix = {
 		channel.enable =  false;
-		nix.settings = {
+		settings = {
 			substituters = [
 				"https://cache.nixos-cuda.org"
 			];
