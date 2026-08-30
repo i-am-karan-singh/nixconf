@@ -1,4 +1,4 @@
-{ ... }: {
+{
 	imports = [
 		../commons/nix.nix
 		../commons/home-manager.nix

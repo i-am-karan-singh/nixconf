@@ -1,4 +1,6 @@
 {
+  "hard_tabs": true,
+  "tab_size": 2,
   "collaboration_panel": {
     "dock": "left",
   },
