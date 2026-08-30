@@ -1,6 +1,6 @@
 {
-  imports = [
-    ../commons/nix-darwin.nix
-    ./home-config.nix
-  ];
+	imports = [
+		../commons/nix-darwin.nix
+		./home-config.nix
+	];
 }

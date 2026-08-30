@@ -1,7 +1,7 @@
 { inputs, pkgs, ... }: {
-  imports = [
-    ./nix.nix
-  ];
+	imports = [
+		./nix.nix
+	];
 
 	homebrew = {
 		enable = true;

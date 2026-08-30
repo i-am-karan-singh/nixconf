@@ -2,7 +2,7 @@
 	imports = [
 	];
 
-  networking.hostName = "nix";
+	networking.hostName = "nix";
 
-  system.stateVersion = "26.05";
+	system.stateVersion = "26.05";
 }

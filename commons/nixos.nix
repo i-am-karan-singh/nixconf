@@ -1,9 +1,9 @@
 { inputs, pkgs, ... }: {
-  imports = [
-    ./nix.nix
-  ];
+	imports = [
+		./nix.nix
+	];
 
- 	boot = {
+	boot = {
 		loader = {
 			systemd-boot.enable = true;
 			efi.canTouchEfiVariables = true;
@@ -34,12 +34,12 @@
 			autosuggestions.enable = true;
 			promptInit = "autoload -U promptinit && promptinit && prompt adam1 && setopt prompt_sp";
 		};
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-      viAlias = true;
-      vimAlias = true;
-    };
+		neovim = {
+			enable = true;
+			defaultEditor = true;
+			viAlias = true;
+			vimAlias = true;
+		};
 	};
 
 	services = {
@@ -65,24 +65,24 @@
 			openFirewall = true;
 		};
 		ollama = {
-      enable = true;
-      host = "0.0.0.0";
-      loadModels = [ "gemma3" ];
-      openFirewall = true;
-    };
-    open-webui = {
-      enable = true;
-      host = "0.0.0.0";
-      openFirewall = true;
-    };
-    syncthing = {
-      enable = true;
-      openDefaultPorts = true;
-      user = "karan";
-      dataDir = "/home/karan";
-      guiAddress = "0.0.0.0:8384";
-      # settings.gui = { user = ""; password = ""; };
-    };
+			enable = true;
+			host = "0.0.0.0";
+			loadModels = [ "gemma3" ];
+			openFirewall = true;
+		};
+		open-webui = {
+			enable = true;
+			host = "0.0.0.0";
+			openFirewall = true;
+		};
+		syncthing = {
+			enable = true;
+			openDefaultPorts = true;
+			user = "karan";
+			dataDir = "/home/karan";
+			guiAddress = "0.0.0.0:8384";
+			# settings.gui = { user = ""; password = ""; };
+		};
 	};
 
 	hardware = {
