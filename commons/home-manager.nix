@@ -1,10 +1,6 @@
 { config, pkgs, configDir, ... }: let
   link = name: config.lib.file.mkOutOfStoreSymlink "${configDir}/${name}";
 in {
-  imports = [
-    ./nix.nix
-  ];
-
   xdg.configFile = {
     "fish".source = link "fish";
     "ghostty".source = link "ghostty";
