@@ -43,4 +43,6 @@ in {
 	};
 
 	news.display = "silent";
+
+	nix.package = null;
 }

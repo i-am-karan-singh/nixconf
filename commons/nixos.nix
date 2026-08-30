@@ -1,8 +1,4 @@
 { inputs, pkgs, ... }: {
-	imports = [
-		./nix.nix
-	];
-
 	boot = {
 		loader = {
 			systemd-boot.enable = true;
@@ -112,17 +108,5 @@
 	nixpkgs.config = {
 		allowUnfree = true;
 		cudaSupport = true;
-	};
-
-	nix = {
-		channel.enable =  false;
-		settings = {
-			substituters = [
-				"https://cache.nixos-cuda.org"
-			];
-			trusted-public-keys = [
-				"cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
-			];
-		};
 	};
 }

@@ -1,8 +1,4 @@
 { inputs, pkgs, ... }: {
-	imports = [
-		./nix.nix
-	];
-
 	homebrew = {
 		enable = true;
 		enableZshIntegration = true;
@@ -87,5 +83,10 @@
 		hostPlatform = "aarch64-darwin";
 	};
 
-	nix.channel.enable =  false;
+	nix.enable = false;
+
+	determinateNix = {
+		enable = true;
+		determinateNixd.telemetry.sentry.endpoint = null;
+	};
 }
