@@ -1,8 +1,4 @@
 { ... }: {
-	extraSpecialArgs = {
-    configDir = "/home/karan/nixconf/config";
-  };
-
   imports = [
 		../commons/home-manager.nix
   ];
