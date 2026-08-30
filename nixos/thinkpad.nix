@@ -1,7 +1,4 @@
 { lib, ... }: {
-	imports = [
-	];
-
 	networking.hostName = "thinkpad";
 
 	hardware.nvidia.prime = {

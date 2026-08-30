@@ -86,4 +86,6 @@
 		config.allowUnfree = true;
 		hostPlatform = "aarch64-darwin";
 	};
+
+	nix.channel.enable =  false;
 }

@@ -36,7 +36,7 @@
 		};
 
 		homeConfigurations."karan" = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages."x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.x86_64-linux;
 			extraSpecialArgs = { configDir = "/home/karan/nixconf/config"; };
       modules = [
         ./linux

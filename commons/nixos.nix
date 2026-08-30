@@ -1,4 +1,8 @@
 { inputs, pkgs, ... }: {
+  imports = [
+    ./nix.nix
+  ];
+
  	boot = {
 		loader = {
 			systemd-boot.enable = true;
@@ -107,4 +111,6 @@
 	security.sudo.wheelNeedsPassword = false;
 
 	nixpkgs.config.allowUnfree = true;
+
+	nix.channel.enable =  false;
 }
