@@ -66,7 +66,6 @@
 		};
 		ollama = {
       enable = true;
-      acceleration = "cuda";
       host = "0.0.0.0";
       loadModels = [ "gemma3" ];
       openFirewall = true;
@@ -110,7 +109,10 @@
 
 	security.sudo.wheelNeedsPassword = false;
 
-	nixpkgs.config.allowUnfree = true;
+	nixpkgs.config = {
+		allowUnfree = true;
+		cudaSupport = true;
+	};
 
 	nix.channel.enable =  false;
 }
