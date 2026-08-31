@@ -1,6 +1,6 @@
 {
 	imports = [
-		../commons/nixos.nix
+		./nixos-config.nix
 		./hardware-config.nix
 		./home-config.nix
 	];

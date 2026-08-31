@@ -1,6 +1,6 @@
 {
 	imports = [
-		../commons/nix-darwin.nix
+		./darwin-config.nix
 		./home-config.nix
 	];
 }

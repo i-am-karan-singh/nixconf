@@ -37,11 +37,11 @@ default_workspace_count = 10
 default_workspace = 0
 workspace_names = []
 app_rules = [
-    { app_id = "com.apple.calculator", floating = true },
-    { app_id = "com.apple.ActivityMonitor", floating = true },
-    { app_id = "com.apple.systempreferences", floating = true },
-    { app_id = "com.apple.SystemSettings", floating = true },
-    { app_name = "python", floating = true },
+	{ app_id = "com.apple.calculator", floating = true },
+	{ app_id = "com.apple.ActivityMonitor", floating = true },
+	{ app_id = "com.apple.systempreferences", floating = true },
+	{ app_id = "com.apple.SystemSettings", floating = true },
+	{ app_name = "python", floating = true },
 ]
 
 [modifier_combinations]

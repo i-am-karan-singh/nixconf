@@ -1,7 +1,0 @@
-[language-server.tinymist]
-command = "tinymist"
-config = { exportPdf = "onType" }
-
-[[language]]
-name = "typst"
-language-servers = ["tinymist"]

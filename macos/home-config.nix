@@ -2,11 +2,8 @@
 	home-manager = {
 		useGlobalPkgs = true;
 
-		extraSpecialArgs = {
+		users.karan = { config, ... }: let
 			configDir = "/Users/karan/Documents/Code/nixconf/config";
-		};
-
-		users.karan = { config, configDir, ... }: let
 			link = name: config.lib.file.mkOutOfStoreSymlink "${configDir}/${name}";
 		in {
 			imports = [
@@ -14,8 +11,8 @@
 			];
 
 			home.file = {
-				".local/share/fish" = { source = link "histfile"; };
-				".local/share/gtimelog" = { source = link "gtimelog"; };
+				".local/share/gtimelog".source = link "gtimelog";
+				".local/share/fish/fish_history".source = link "fish_history";
 			};
 
 			home.stateVersion = "26.05";

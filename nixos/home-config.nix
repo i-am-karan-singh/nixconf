@@ -2,11 +2,7 @@
 	home-manager = {
 		useGlobalPkgs = true;
 
-		extraSpecialArgs = {
-			configDir = "/home/karan/nixconf/config";
-		};
-
-		users.karan = { ... }: {
+		users.karan = {
 			imports = [
 				../commons/home-manager.nix
 			];

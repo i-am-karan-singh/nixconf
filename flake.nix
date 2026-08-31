@@ -47,7 +47,7 @@
 
 		homeConfigurations."karan" = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.x86_64-linux;
-			extraSpecialArgs = { configDir = "/home/karan/nixconf/config"; };
+			extraSpecialArgs = { inherit inputs; };
 			modules = [
 				determinate.homeManagerModules.default
 				./linux
@@ -63,7 +63,7 @@
 					determinate.homeManagerModules.default
 					home-manager.nixosModules.home-manager
 					./nixos
-					./nixos/thinkpad.nix
+					./profiles/thinkpad.nix
 				];
 			};
 			alienware = nixpkgs.lib.nixosSystem {
@@ -74,7 +74,7 @@
 					determinate.homeManagerModules.default
 					home-manager.nixosModules.home-manager
 					./nixos
-					./nixos/alienware.nix
+					./profiles/alienware.nix
 				];
 			};
 		};

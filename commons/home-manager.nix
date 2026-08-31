@@ -1,33 +1,16 @@
-{ config, pkgs, configDir, ... }: let
-	link = name: config.lib.file.mkOutOfStoreSymlink "${configDir}/${name}";
-in {
-	xdg.configFile = {
-		"fish".source = link "fish";
-		"ghostty".source = link "ghostty";
-		"wezterm".source = link "wezterm";
-		"kitty".source = link "kitty";
-		"helix".source = link "helix";
-		"nvim".source = link "nvim";
-		"zed".source = link "zed";
-	};
+{ pkgs, ... }: {
+	imports = [
+		./ghostty.nix
+		./kitty.nix
+		./wezterm.nix
 
-	programs = {
-		git = {
-			enable = true;
-			settings = {
-				user.name = "Karan Singh";
-				user.email = "i-am-karan-singh@users.noreply.github.com";
-				init.defaultBranch = "main";
-			};
-		};
-		jujutsu = {
-			enable = true;
-			settings = {
-				user.name = "Karan Singh";
-				user.email = "i-am-karan-singh@users.noreply.github.com";
-			};
-		};
-	};
+		./helix.nix
+		./neovim.nix
+		./zed.nix
+
+		./fish.nix
+		./git.nix
+	];
 
 	gtk = {
 		enable = true;
