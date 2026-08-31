@@ -85,6 +85,7 @@
 	    "lua"
 	    "macos-classic"
 	    "make"
+			"nix"
 	    "toml"
 	    "typst"
 	    "ultimate-dark-neo"
