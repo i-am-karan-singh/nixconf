@@ -23,7 +23,7 @@
 			"helium-browser" "zoom" "slack" "monitorcontrol" "mac-mouse-fix"
 			"chatgpt" "claude" "opencode-desktop" "open-webui" "claude-code" "codex"
 			"lm-studio-bionic" "lm-studio"
-			"pycharm" "fork"
+			"pycharm" "visual-studio-code" "fork"
 			"mactex-no-gui" "texifier" "tailscale-app" "balenaetcher"
 			"font-roboto-mono" "font-fira-code-nerd-font" "font-jetbrains-mono"
 			"font-jetbrains-mono-nerd-font" "font-0xproto" "font-0xproto-nerd-font"
