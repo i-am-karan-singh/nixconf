@@ -63,7 +63,7 @@
 					determinate.homeManagerModules.default
 					home-manager.nixosModules.home-manager
 					./nixos
-					./profiles/thinkpad.nix
+					./profiles/thinkpad
 				];
 			};
 			alienware = nixpkgs.lib.nixosSystem {
@@ -74,7 +74,7 @@
 					determinate.homeManagerModules.default
 					home-manager.nixosModules.home-manager
 					./nixos
-					./profiles/alienware.nix
+					./profiles/alienware
 				];
 			};
 		};

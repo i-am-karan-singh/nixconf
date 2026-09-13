@@ -36,6 +36,7 @@
 			Numbers = 361304891;
 			Pages = 361309726;
 			Keynote = 361285480;
+			"Supernote Partner" = 1494992020;
 		};
 	};
 }

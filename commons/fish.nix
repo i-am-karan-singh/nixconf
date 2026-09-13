@@ -4,6 +4,7 @@
 
 		interactiveShellInit = ''
 			set -U fish_greeting
+			bind -M insert 'ç' fzf-cd-widget
 		'';
 
 		shellInit = ''
@@ -16,10 +17,11 @@
 			tailscale-app = "/Applications/Tailscale.app/Contents/MacOS/Tailscale";
 		};
 
-		binds."ç" = {
-			mode = "insert";
-			command = "fzf-cd-widget";
-		};
+		# see https://github.com/nix-community/home-manager/pull/9939
+		# binds."ç" = {
+		# 	mode = "insert";
+		# 	command = "fzf-cd-widget";
+		# };
 	};
 
 	programs.fzf = {
