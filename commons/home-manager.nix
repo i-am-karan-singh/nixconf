@@ -18,6 +18,7 @@
 	};
 
 	home.packages = with pkgs; [
+		nixd nil
 	];
 
 	dconf.settings."org/gnome/settings-daemon/plugins/power" = {

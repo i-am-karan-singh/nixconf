@@ -14,7 +14,7 @@
 	environment.systemPackages = with pkgs; [
 		neovim helix zed-editor
 		ghostty wezterm kitty
-		fzf uv ruff nixd nil
+		fzf uv ruff
 		efibootmgr gnome-tweaks asdbctl rofi xdg-desktop-portal-wlr
 		roboto-mono fira-code jetbrains-mono _0xproto
 		nerd-fonts.fira-code nerd-fonts.jetbrains-mono nerd-fonts._0xproto

@@ -5,7 +5,6 @@
 
 	environment.systemPackages = with pkgs; [
 		gtimelog
-		nixd nil
 	];
 
 	programs.fish.enable = true;
