@@ -6,6 +6,7 @@
 
 		./helix.nix
 		./neovim.nix
+		./kakoune.nix
 		./zed.nix
 
 		./fish.nix
@@ -18,7 +19,8 @@
 	};
 
 	home.packages = with pkgs; [
-		nixd nil
+		gtimelog typst
+		nixd nil texlab tinymist
 	];
 
 	dconf.settings."org/gnome/settings-daemon/plugins/power" = {

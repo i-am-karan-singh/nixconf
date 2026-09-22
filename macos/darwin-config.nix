@@ -1,11 +1,9 @@
-{ inputs, pkgs, ... }: {
+{ inputs, ... }: {
 	imports = [
 		../commons/homebrew.nix
 	];
 
-	environment.systemPackages = with pkgs; [
-		gtimelog
-	];
+	environment.systemPackages = [];
 
 	programs.fish.enable = true;
 

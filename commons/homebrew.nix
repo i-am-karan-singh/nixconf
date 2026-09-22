@@ -14,10 +14,7 @@
 			cleanup = "zap";
 		};
 
-		brews = [
-			"uv" "ruff" "typst" "opencode"
-			"fd" "ripgrep" "texlab" "tinymist"
-		];
+		brews = [];
 
 		casks =  [
 			"helium-browser" "zoom" "slack" "monitorcontrol" "mac-mouse-fix"

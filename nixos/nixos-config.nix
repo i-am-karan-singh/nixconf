@@ -12,9 +12,6 @@
 	time.timeZone = "US/Eastern";
 
 	environment.systemPackages = with pkgs; [
-		neovim helix zed-editor
-		ghostty wezterm kitty
-		fzf uv ruff
 		efibootmgr gnome-tweaks asdbctl rofi xdg-desktop-portal-wlr
 		roboto-mono fira-code jetbrains-mono _0xproto
 		nerd-fonts.fira-code nerd-fonts.jetbrains-mono nerd-fonts._0xproto
@@ -98,8 +95,7 @@
 		description = "Karan Singh";
 		isNormalUser = true;
 		extraGroups = [ "wheel" ];
-		packages = with pkgs; [
-		];
+		packages = [];
 		shell = pkgs.zsh;
 	};
 
