@@ -22,8 +22,6 @@
 			"lm-studio-bionic" "lm-studio"
 			"pycharm" "visual-studio-code" "fork"
 			"mactex-no-gui" "texifier" "tailscale-app" "balenaetcher"
-			"font-roboto-mono" "font-fira-code-nerd-font" "font-jetbrains-mono"
-			"font-jetbrains-mono-nerd-font" "font-0xproto" "font-0xproto-nerd-font"
 		];
 
 		masApps = {

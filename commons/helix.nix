@@ -6,6 +6,7 @@
 		settings = {
 			theme = "carbon-dark";
 			editor = {
+				bufferline = "multiple";
 				line-number = "relative";
 				end-of-line-diagnostics = "hint";
 				inline-diagnostics.cursor-line = "warning";

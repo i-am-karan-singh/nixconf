@@ -29,6 +29,14 @@
 			enableZshIntegration = true;
 		};
 
+		herdr = {
+			enable = true;
+			settings = {
+				onboarding = false;
+				terminal.default_shell = "fish";
+			};
+		};
+
 		uv.enable = true;
 		ruff.enable = true;
 
@@ -37,6 +45,6 @@
 		ripgrep-all.enable = true;
 
 		opencode.enable = true;
-		herdr.enable = true;
+		pi-coding-agent.enable = true;
 	};
 }

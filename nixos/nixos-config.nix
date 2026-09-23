@@ -13,8 +13,6 @@
 
 	environment.systemPackages = with pkgs; [
 		efibootmgr gnome-tweaks asdbctl rofi xdg-desktop-portal-wlr
-		roboto-mono fira-code jetbrains-mono _0xproto
-		nerd-fonts.fira-code nerd-fonts.jetbrains-mono nerd-fonts._0xproto
 	] ++ [
 		inputs.helium.packages.${stdenv.hostPlatform.system}.default
 	];
