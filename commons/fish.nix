@@ -29,6 +29,12 @@
 			enableZshIntegration = true;
 		};
 
+		zoxide = {
+			enable = true;
+			enableFishIntegration = true;
+			enableZshIntegration = true;
+		};
+
 		herdr = {
 			enable = true;
 			settings = {

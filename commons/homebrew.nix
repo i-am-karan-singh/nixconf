@@ -1,8 +1,8 @@
 {
 	homebrew = {
 		enable = true;
-		enableZshIntegration = true;
 		enableFishIntegration = true;
+		enableZshIntegration = true;
 
 		onActivation = {
 			extraEnv = {
