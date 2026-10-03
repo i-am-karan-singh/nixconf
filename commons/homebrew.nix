@@ -21,7 +21,7 @@
 		casks =  [
 			"helium-browser" "zoom" "slack" "monitorcontrol" "mac-mouse-fix"
 			"chatgpt" "claude" "opencode-desktop" "claude-code" "codex"
-			"lm-studio-bionic" "zed"
+			"lm-studio-bionic" "deepseek-harness" "zed" "obsidian"
 			"mactex-no-gui" "texifier" "visual-studio-code" "tailscale-app"
 		];
 

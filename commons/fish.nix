@@ -54,5 +54,7 @@
 
 		opencode.enable = true;
 		pi-coding-agent.enable = true;
+
+		npm.enable = true;
 	};
 }
