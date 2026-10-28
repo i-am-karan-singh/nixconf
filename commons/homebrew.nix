@@ -14,14 +14,14 @@
 			cleanup = "zap";
 		};
 
-		brews = [];
-
 		casks =  [
 			"helium-browser" "zoom" "slack" "monitorcontrol" "mac-mouse-fix"
 			"chatgpt" "claude" "opencode-desktop" "claude-code" "codex" "cmux"
 			"lm-studio-bionic" "deepseek-harness" "obsidian"
 			"mactex-no-gui" "texifier" "visual-studio-code"
 			"tailscale-app" "syncthing-app"
+			"macos-fuse-t/cask/fuse-t"
+			"macos-fuse-t/cask/fuse-t-sshfs"
 		];
 
 		masApps = {

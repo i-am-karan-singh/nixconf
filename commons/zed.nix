@@ -28,6 +28,16 @@
 				exportPdf = "onType";
 				outputPath = "$root/$name";
 			};
+			edit_predictions = {
+				provider = "ollama";
+				ollama = {
+					model = "zeta2:latest";
+					prompt_format = "zeta2_1";
+					api_url = "http://arch.falcon-court.ts.net:11434";
+					max_output_tokens = 256;
+					debounce = 300;
+				};
+			};
 		};
 
 		extensions = [

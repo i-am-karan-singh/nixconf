@@ -1,6 +1,7 @@
 { inputs, ... }: {
 	imports = [
 		../commons/homebrew.nix
+		../commons/launchd.nix
 	];
 
 	environment.systemPackages = [];
