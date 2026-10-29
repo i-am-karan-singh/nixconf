@@ -12,4 +12,9 @@
 		homeDirectory = "/home/karan";
 		stateVersion = "26.05";
 	};
+
+	nixpkgs.config = {
+		allowUnfree = true;
+		cudaSupport = true;
+	};
 }
