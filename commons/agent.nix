@@ -9,6 +9,8 @@
 			};
 		};
 
+		codex.enable = true;
+		claude-code.enable = true;
 		opencode.enable = true;
 		pi-coding-agent.enable = true;
 	};
