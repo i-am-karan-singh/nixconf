@@ -2,7 +2,8 @@
 	description = "nixconf flake";
 
 	inputs = {
-		nixpkgs.url = "https://flakehub.com/f/DeterminateSystems/nixpkgs-weekly/0.1";
+		nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1";
+		# nixpkgs.url = "https://flakehub.com/f/DeterminateSystems/nixpkgs-weekly/0.1";
 		nix-darwin = {
 			url = "https://flakehub.com/f/nix-darwin/nix-darwin/0.1";
 			inputs.nixpkgs.follows = "nixpkgs";
