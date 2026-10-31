@@ -17,6 +17,25 @@
         "type": "github"
       }
     },
+    "cockpit-nvidia": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1793445895,
+        "narHash": "sha256-l3JAMYwOm+VV0415sYXehRvHr6k409pjxqPeV5Sfixg=",
+        "rev": "b52a85c182a1ca9e0ab025f7aac67cdd0c33d328",
+        "revCount": 7,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/karan/cockpit-nvidia/0.1.7%2Brev-b52a85c182a1ca9e0ab025f7aac67cdd0c33d328/01a191b5-5bea-7e30-b01e-e7859fe78734/source.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://flakehub.com/f/karan/cockpit-nvidia/0.1"
+      }
+    },
     "determinate": {
       "inputs": {
         "determinate-nixd-aarch64-darwin": "determinate-nixd-aarch64-darwin",
@@ -295,6 +314,7 @@
     },
     "root": {
       "inputs": {
+        "cockpit-nvidia": "cockpit-nvidia",
         "determinate": "determinate",
         "gtimelog-mac": "gtimelog-mac",
         "home-manager": "home-manager",

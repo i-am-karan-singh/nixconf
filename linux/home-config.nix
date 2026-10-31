@@ -4,6 +4,7 @@
 	];
 
 	programs.home-manager.enable = true;
+	programs.cockpit-nvidia.enable = true;
 
 	targets.genericLinux.enable = true;
 

@@ -24,9 +24,13 @@
 			url = "https://flakehub.com/f/karan/nix-koreader-mac/0.1";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+		cockpit-nvidia = {
+			url = "https://flakehub.com/f/karan/cockpit-nvidia/0.1";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 	};
 
-	outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager, determinate, ... }: {
+	outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager, determinate, cockpit-nvidia, ... }: {
 		darwinConfigurations = {
 			"Karans-MacBook-Pro" = nix-darwin.lib.darwinSystem {
 				system = "aarch64-darwin";
@@ -53,6 +57,7 @@
 			extraSpecialArgs = { inherit inputs; };
 			modules = [
 				determinate.homeManagerModules.default
+				cockpit-nvidia.homeManagerModules.default
 				./linux
 			];
 		};
