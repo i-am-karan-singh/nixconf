@@ -2,6 +2,7 @@
 	programs = {
 		herdr = {
 			enable = true;
+			mutableSettings = true;
 
 			settings = {
 				onboarding = false;
@@ -9,9 +10,15 @@
 			};
 		};
 
+		pi-coding-agent = {
+			enable = true;
+			mutableSettings = true;
+
+			settings.packages = [ "https://github.com/earendil-works/pi-claude-code" ];
+		};
+
+		opencode.enable = true;
 		codex.enable = true;
 		claude-code.enable = true;
-		opencode.enable = true;
-		pi-coding-agent.enable = true;
 	};
 }
