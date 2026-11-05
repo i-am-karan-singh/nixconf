@@ -4,6 +4,9 @@
 
 		interactiveShellInit = ''
 			set -U fish_greeting
+			if test -n "$REX_BIN_DIR"
+				set -gx PATH "$REX_BIN_DIR" $PATH
+			end
 		'';
 
 		shellInit = ''
