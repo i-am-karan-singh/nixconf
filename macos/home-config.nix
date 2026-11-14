@@ -20,6 +20,7 @@
 			home.file = {
 				".local/share/gtimelog".source = link "${configDir}/gtimelog";
 				".local/share/fish/fish_history".source = link "${configDir}/fish_history";
+				".config/rift".source = link "${configDir}/rift";
 				"Download".source = link downloadDir;
 			};
 

@@ -14,12 +14,17 @@
 			cleanup = "zap";
 		};
 
+		brews = [
+			"acsandmann/tap/rift"
+		];
+
 		casks =  [
 			"helium-browser" "zoom" "slack" "monitorcontrol" "mac-mouse-fix"
 			"chatgpt" "claude" "opencode-desktop" "cmux" "lm-studio-bionic"
 			"obsidian" "mactex-no-gui" "texifier" "visual-studio-code" "skim"
 			"tailscale-app" "syncthing-app" "deepseek-harness" "herdr-app"
 			"macos-fuse-t/cask/fuse-t" "macos-fuse-t/cask/fuse-t-sshfs"
+			"alfred" "zed-delta"
 		];
 
 		masApps = {

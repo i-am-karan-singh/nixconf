@@ -26,7 +26,8 @@ vertical = 0
 [settings.ui.menu_bar]
 enabled = true
 show_empty = false
-display_style = "layout"
+display_style = "label"
+active_label = "index"
 
 [settings.ui.mission_control]
 enabled = true
@@ -43,6 +44,26 @@ app_rules = [
 	{ app_id = "com.apple.SystemSettings", floating = true },
 	{ app_name = "python", floating = true },
 ]
+
+[[virtual_workspaces.workspace_rules]]
+workspace = 5
+display = ["top", "builtin"]
+
+[[virtual_workspaces.workspace_rules]]
+workspace = 6
+display = ["top", "builtin"]
+
+[[virtual_workspaces.workspace_rules]]
+workspace = 7
+display = ["top", "builtin"]
+
+[[virtual_workspaces.workspace_rules]]
+workspace = 8
+display = ["top", "builtin"]
+
+[[virtual_workspaces.workspace_rules]]
+workspace = 9
+display = ["top", "builtin"]
 
 [modifier_combinations]
 comb1 = "Alt + Shift"
