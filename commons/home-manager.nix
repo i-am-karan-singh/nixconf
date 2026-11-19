@@ -21,7 +21,7 @@
 	};
 
 	home.packages = with pkgs; [
-		nixd nil typst texlab tinymist just omp
+		nixd nil typst texlab tinymist just omp tlrc
 		roboto-mono fira-code jetbrains-mono _0xproto
 	] ++ (with pkgs.nerd-fonts; [
 		roboto-mono fira-code jetbrains-mono _0xproto

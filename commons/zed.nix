@@ -35,7 +35,6 @@
 					prompt_format = "zeta2_1";
 					api_url = "http://arch.falcon-court.ts.net:11434";
 					max_output_tokens = 256;
-					debounce = 300;
 				};
 			};
 		};
